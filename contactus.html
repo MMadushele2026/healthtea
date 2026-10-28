@@ -1,21 +1,28 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>home|flatStomachtea</title>
-     <meta name="viewport" content="width=device-width, initial-scale=1'0">
-
-        <!--contactus page updated-->
-        <title>Home|flatstomachtea</title>     
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name=" description" content="Discover Flat Stoamch Tea (FST) - natural herbal teas designed to support your wellness, detox, and fitness goals with 4-week challenge programs.">
         <link rel="stylesheet" href="CSS/mystyle.css">
-
+        <title>Home | flatStomachtea</title>
+         <!--contactus page updated-->
+        
+        
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"/>
+               <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 
         <style>
        .text {font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
-       }     
+       }  
+
+        
         </style>
+       
     </head>
     <body>
+
 
         <a class="nav" href="index.html">Home</a>
         <a class="nav" href="aboutus.html">About Us</a>
@@ -44,6 +51,74 @@
 <p>Business Hours: Monday – Saturday: 08:00 – 17:00</p>
 </div>
 <br>
+
+
+<main class="container">
+    <!-- header Tag Hierarchy (H!) -->
+     <h1> Contact Flat Stomach Tea</h1>
+     <p>We' d love to hear from you! Please fill out the form below with your enquiry.
+
+        <!-- Form Functionally & Validation (section 4 Requirements0) -->
+         <form id="contactForm" action=" mailto:info@Flatstomachtea.co.za" method="post" class="contact-form" novalidate>
+
+            
+            <div class="form-group">
+                <label for="fullName"> Full Name *</label>
+                <input type="text" id="fullName" name="fullName" required placeholder="e.g. Jane Doe">
+                <span class="error"-message" id="nameError"></span>
+                </div>
+
+
+                <div class="form-group">
+                    <label fort="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required placeholder="e.g.jane2example.com">
+                    <span class="error-message"id="emailError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number *</label>
+                    <input type="tel" id="phone" name"phone" required pattern="[0-9]{10}" placeholder="e.g. 0821234567">
+                    <span class="error-message" id="phoneError"></span>
+                </div>
+
+
+  <!-- Specific Type of Message Selection-->
+ <div class="form-group">
+ <label for="messageType">Type of  message *</label>
+ <select id="messageType" name="messageType" required>
+ < option value="">-- please Select--</option>
+ <option value="general">General Enquiry</option>
+ <option value="order">Order Tracking & Status</option>
+ <option value="feedback">Product Feedback</option>
+ </select>
+ </div>
+
+ <div class="form-group">
+ <label for="message"> Full Message *</label>
+ <textarea id="message" name="message" rows="5" required minlength="10" placeholder="Type your message here..."></textarea>
+ <span class="error-message" id="msgError"></span>
+ </div>
+
+ <!--Speciific Type of message Selection --
+  div class="form-group">
+  <label for="messageType">Type of message *</label>
+ <select id="messageType">Type of messageType" <required>
+ <option value="">-- Please Select --</option>
+ <option value="general">General Enquiry</option>
+ <option value="order"Order Tracking & Status</option>
+ <option value=" feedback" product Feedback</option>
+</select>
+
+ 
+ 
+ 
+
+        
+
+        
+        
+
+
 
     </body>
         

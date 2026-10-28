@@ -2,16 +2,35 @@
 <html>
     <head>
         <!--aboutus page update-->
-        
-        <title>Home|flatstomachtea</title>      
-      <meta name="viewport" content="width=device-width, initial-scale=1'0">
-
-
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name=" description" content="Discover Flat Stoamch Tea (FST) - natural herbal teas designed to support your wellness, detox, and fitness goals with 4-week challenge programs.">
         <link rel="stylesheet" href="CSS/mystyle.css">
+        <title>Home | flatStomachtea</title>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+        <script>/* your map code */</script> 
 
-
+        
         <style>
+        body { font-family: Arial, Helvetica, sans-serif; margin: 0; }
+        h2 { text-align: center; margin: 12px 0;
+            #map {
+                height: 70vh; width: 95%; margin: 0 auto; border-radius: 8px }
+                .controls {text- align: center; margin: 10px; }
+                button {padding : 8px 14px; margin: 3px; border : none; border-radius: 6px;
+                    background: #1a5276; color:#fff; cursor: pointer; }
+                    button:hover { background: #2471a3; }
+            }
+            #map {height : 400px; width: 95%; margin: 0 auto; }
+            .controls {text-align: text-align: center; margin: 10px; }
+            botton { padding: 8px 14px; margin: 3px; border: none; border-radius: 6px;
+                background: #1a5276; color: #fff; cursor: pointer;}
+                button: hover { background:#1a5276 color:px
 
+            ./
+            }
+             
+        }
             .text {
                 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             }
@@ -23,14 +42,9 @@
             h1, h2, h3{
                 border:1px solid black;
             }
-    
-            
+              
         </style>       
-         
-
-
         
-
     </head>
     <body>
         <a class="nav" href="index.html">Home</a>
@@ -52,7 +66,62 @@
 <h2 style="color: aqua;background-color: darkgreen;"> Vision Statement</h2>
 <p>To become a trusted, recognisable wellness retail brand celebrated for genuine product,transparent ingredient information, amnd outstanding customer care.</p>
 
-
 </h3>
+
+<br><br>
+
+<button onclick="popMessage()">pop a message</button>
+
+<p id="msg">where is the new message?</p>
+
+<h2>
+    Where to Buy Our Flat Stomach Tea</h2>
+    <div class="controls">
+        <button onclick="showAll()">Show all stocklists</button>
+        <button onclick="locateUser()">find my location</button>
+        </div>
+        <div id="map"></div>
+
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+        <script>
+            // CHANGE these to your own locations
+            const locations = [
+            { name: "Nigiro Tea House", lat: -26. 1435, lng: 28.0181 , info: "Parkhurst, randburg"},
+            { name: "The Tea Emporium", lat: -26.1677, ing: 28.1545, info: "Bedfordview" },
+            { name: "Tea & Antique", lat: -26.1002, lng; 28.0478, info: "parktown, Sandton" },
+            { name: "Ktom Herbal Tea Project", lat: -25.9870, lng: 28.2252, info "Tembisa" }
+            ];
+
+            const map = L.map('map').setView([ -26.1, 28.1],10);
+            L.tilelayer('https://{s}.tile.openstreetmap.org/{z}/{y}'.png'.{
+            maxZoom:19;
+            attributiom: '&copy; openStreetmap contributors'
+         }).addTo (Map):
+
+         const markers= locations.map(loc=>
+            L.marker([loc.lat,loc.lng]).addTo(map)
+            .bindPopup(' <b>${loc.name}</b><br>${loc.info}')
+        );
+        function showAll() {
+            map.fitBounds(L.featureGroup(markets).getBounds(.pad(0.2));
+        }
+        function showAll() {
+            map.locate({ setView: true, maxZoom: 15 });
+        } 
+        map.on('locationfound', e=> {
+            L.circle(e.latlng).aaTo(map).bindPopup("You are here").openPopup();
+          L.marker(e.latlng).addTo(map).bindPopup("You are here").openPopup();
+
+          ShowAll(
+           < /script>
+          )
+        })  
+        
+</h2>
+
+
+
+ 
+</main>
     </body
-</html>
+  </html>

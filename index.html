@@ -1,34 +1,186 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <!-- home page update-->
-        
-        <title>Home | flatStomachtea</title>
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- SEO: Title & Meta Description for About Page -->
+     <meta name=" description" content="Discover Flat Stoamch Tea (FST) - natural herbal teas designed to support your wellness, detox, and fitness goals with 4-week challenge programs.">
+        <link rel="stylesheet" href="CSS/mystyle.css">
+        <title>Home | flatStomachtea</title>
+
         <style>
             .text {
                 font-family: Arial, Helvetica, sans-serif;
             }
         </style>
-        <link rel="stylesheet" href="CSS/mystyle.css">
+
+        <script src="javascript/script.js"></script>
+        <!--3. Leaflet javascript-
+        <!-- Leaflets CSS for Interactive Map-->
+         <Link rel="stylesheet"href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+         
     </head> 
     <body>
         
+                     
         <a class="nav" href="index.html">Home</a>
         <a class="nav" href="aboutus.html">About Us</a>
         <a class="nav" href="services.html">Services</a>
         <a class="nav" href="enquiry.html">Enquiry</a>
         <a class="nav" href="contactus.html">Contant Us</a>
-
+        
         <br/>
         <br>
+        
         <img src ="images/7 days magic tummy.jpg"width="400"/>
+        
+        
         <h1 style="color: aqua;background-color: darkgreen;">Refresh,Cleanse& Empower your body Naturally</h1>
         <p>Welcome to FST (Flat Stomach Tea)!whether provide easy-to-use,natural wellness tea blends and flat-flush capsule bundles crafted for every South Africans. whether you are starting your health journey or maintaing a active lifestyle,our blends make daily wellness simple, refreshing,and effective.</p>
+
         <h2 style="color: aqua;background: darkgreen;font-size: medium;">Featured Highs</h2>
         <p>1. 100% Natural Ingredients:Crafted with quality botanical herbs to support healthy digestion.
             <p>2. Ready -Made Combos:Pairing Flat-Tummy tea,green tea, and flat-flush capsules into all-in one bundles.</p>
             <P>3. Trusted Quality: clear,honest product guidance backed by   customer care</P>
+         <br><b></b>
+         <header>
+            <h1>flat stomach Tea</h1>
+            <p>Your journey to natural health and weight management</p>
+
+                <button class="nav-btn" onclick="openModel()">FAQ/ Info</button>
+            </header>
+            
+            <main>
+            <!-- section : Dynamic Search & Filter Section-->
+            <section class="section">
+                <h2> Frequently Asked Questions</h2>
+                </section>
+
+          
+                <div class="accordion"
+            </section>
+          </div>
+
+             <div class="accordion">
+                    <button class="accordion-header">How do I use Flat Stomach Tea?</button>
+                    <div class="accordion-content"><p>Drink one cup every morning before breakfast for best results</p>
+    
+         <div>
+
+            <button class="accordion-header">What are ingridients?/</button>
+            <div class="accordion-content">
+                <p>100% natural herbs include Green Tea,Peppermint and Ginger Root</p>
+            </div>
+         </div>
+        </section
+    </main>
+
+      <!-- Lightbox Modal Container-->
+           <div id="lightbox". class="lightbox">
+            <span class="close-btn">&times;</span>
+            <img class="lightbox-content" id="lightbox-target-img" alt="Zoomed view">
+            </div>
+
+            <div class="controls">
+                <input type="text" id="searchInput" placeholder="Search products..."onkeyup="filterproducts()">
+                <select Id="sortSelect" onchange="sortproducts()">
+                    <option value="default">Sort By</option>
+                    <option value="low-high"price: Low to High</option>
+                        <option value="high-low">Price: High to Low</option>
+                        </select>
+                    
+         </div>
+
+
+        <!-- section : Interactive Gallery & Lightbox -->
+        <section class=" gallery section">
+            <h2>Our Products gallery</h2>
+            <div class="gallery-grid" id="productList">
+
+                <div class="product-card">
+                <img src="images/product fst.jpg" alt="Flat Stomach Tea Main Package" class="lightbox-img">
+                <h3>Flat Stomach Tea Main</h3>
+                <p>Signature daily detox blend.</p>
+                </div>
+
+                <div class="product-card">
+                <img src="images/slim tummy.jpg" alt="Slim Tummy Tea" class="lightbox-img">
+                <h3>Slim Tummy Tea</h3>
+                <p>Formulated for everyday bloating support.</p>
+                </div>
+
+                <div class="product-card">
+                <img src="images/trimmax flat tummy.jpg" alt="Trimmax Flat Tummy Blend" class="lighbox-img">
+                <h3>Trimmax Flat Tummy</h3>
+                <p>Advanced weight management formula.</p>
+                </div>
+
+                </div>
+                </section>
+
+     <Div id="productGrid" class="product-gri
+       <!-- Products dynamically injected here via JavaScript-->
+ </div>
+</section>
+
+  </section>
+
+  <!-- Interactive Map Section-->
+   <section class="section">
+    <h2>Store Locator</h2>
+    <div id="map"></div>
+   </section>
+
+  </main>
+
+  <!-- Modal Component-->
+   <div id="infoModel" class="modal">
+    <div class="model-content">
+    <span class="close-btn" onclick="closeModel()">&times;</span>
+    <h2>About Our Teas</h2>
+    <p>Our blends are crafted from natural ingredients designed to support wellnes,improve digestion, and boost energy level.</p>
+    </div>
+
+    <!-- Lightbox model Component-->
+     <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="lightbox-close"Lightbox-close">&times;</span>
+        <img id="lightboxImg"src"" alt="">
+        </div>
+
+        <!-- Leaflet JS for  Map-->
+         <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+         <script scr="javascript/script.js"></scripts
+
+            <!-- search & Filter Controls -->
+            <section class"control">
+                <!-- search Bar-->
+                <input type="text"id"="searchInput" Pleaseholder="Search product..." oninput="filterAndSortProducts()">
+
+                <!-- Category Filter-->
+                <select id="categorySelect"onchange="fillerAndSortProducts()">
+              <option value="all">All Categories</option> 
+              <option value" tea" > Teas/option
+                <option value" accessory">Accessories</option>
+                </select>
+
+                <!-- Sorting-->
+                <select id="sortselect" onchange=""filterAndSortproducts()">
+                <option value="default" >Sort By</option>
+                <option value="price-low" >Price:Low to High</option>
+                <option value="name">Name(A-Z) </option>
+                </select>
+                </section>
+
+                <!-- Product Container (dynamically populated via Js)-->
+                <section id="productGrid" class="product-grid"></section>
+
+                <script src="app.js"></script>
+
+                
+            
+
+
 
     </body>
 </html>  
