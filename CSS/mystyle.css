@@ -5,27 +5,34 @@
     padding: 15px;
     text-decoration: none;
 }
+
 h1 {
-  color: aqua; background-color: darkgreen;  text-align: left;
-  border: 1px solid black;
-}
-h2 {
-    text-align: center;color: #163d2d;
+    color: aqua;
+    background-color: darkgreen;
+    text-align: left;
     border: 1px solid black;
 }
 
-.nav:hover{
+h2 {
+    text-align: center;
+    color: #163d2d;
+    border: 1px solid black;
+}
+
+.nav:hover {
     background-color: rgb(19, 85, 94);
 }
 
-p{
+p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 25px;
     color: blue;
 }
-img{
+
+img {
     margin-top: 20px;
 }
+
 /* tablet */
 @media (max-width: 768px) {
     .nav {
@@ -34,36 +41,41 @@ img{
         text-align: center;
     }
 }
+
 /* mobile */
-@media (max-width: 480px){
+@media (max-width: 480px) {
     .nav {
         display: block;
-        margin: 0 0 6px 0;    
+        margin: 0 0 6px 0;
     }
+
     div {
         flex-direction: column;
     }
-    p{
+
+    p {
         font-size: 16px;
     }
-    h1{
+
+    h1 {
         font-size: 22px;
     }
-    h2{
+
+    h2 {
         font-size: 18px;
     }
+
     * {
         box-sizing: border-box;
         margin: 0;
         padding: o;
-        Font-family:Arial,sans serif;
+        Font-family: Arial, sans serif;
     }
 
     /* General layout & typography */
     body {
         font-family: Arial, Helvetica, sans-serif;
-        margin: 0:
-        padding: 20px;
+        margin: 0: padding: 20px;
         background-color: #9f9f9;
         color: #333;
     }
@@ -78,7 +90,7 @@ img{
         display: flex;
         flex- wrap: wrape;
         gap: 20px;
-        justify- content: center;    
+        justify- content: center;
     }
 
     .product-card {
@@ -87,7 +99,7 @@ img{
         padding: 15px;
         width: 250px;
         text-align: center;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 
     }
 
@@ -127,40 +139,429 @@ img{
         transition: 0.3s;
         margin-top: 10px;
         boarder- radius: 4px;
-    } 
 
-    ,accordion.active, .accordion:hover {
-        background-color: #1b5e20;
+        /* hrbalcart - Flat stomach Tea | Part 2 Styles*/
+        :root {
+            --green: #1f4d1f;
+            --green-light: #3b7d2c;
+            --accent: #7fe0c5;
+            --blue: #1a3fa0;
+            --bg: #fbfaf3;
+            --text: #222
+        }
 
-    }
+        * {
+            box-sizing: borde-box
+        }
 
-    .panel {
-        padding: 0 18px;
-        display: none;
-        background-color: white;
-        overflow: hidden;
-        border-left: 3px solid #2e7d32;
-        margin-bottom: 10px;
-    }
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6
+        }
 
-    /*lightbox-content {
-    max-width: 80%;
-    max-height: 80%;
-    border-radius: 8px;
-}
+        header.site {
+            padding: 12px 20px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            flex-wrap: wrape
+        }
 
-.close-btn {
-position: absolute;
-top: 20px;
-right: 35px;
-color: #ffffff;
-font-size: 40px;
-cursor: pointer;
-}
-{ height: 400px; width: 100%; }
+        header.site .brand {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: var(--green);
+            text-decoration: none
+        }
 
-    
+        header.site.brand small {
+            display: block;
+            font-size: .7rem;
+            font-weight: normal;
+            font-style: italic;
+        }
 
-    
-    
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrape: wrape;
+            gap 4px
+        }
 
+
+        nav ul {
+            list-style: none:margin:0;
+            padding: 0;
+            display;
+            flex;
+            flex-wrape;
+            wrape;
+
+            gap:padding nav a {
+                display: block;
+                background: var(--green light);
+                transform: translateY(-2px)
+            }
+
+            .banner {}
+
+            color:var() .banner {
+                background: :var(---green);
+                color: var() (---accent);
+                font-
+            }
+
+            main {
+                max-width: 1100px;
+                margin: 0 auto;
+                padding: 16px
+            }
+
+            h2.band {
+                background: var(--blue);
+                font-size: 1. 15rem
+            }
+
+            intro {
+                color: var (--blue0);
+                font-size: 1.15rem
+            }
+
+            .hero {
+                display: grid;
+                grid-template-columns:
+                    1fr 1fr gap: 16px
+            }
+
+            .hero {
+                display: grid:-templete-column:1fr 1fr;
+                gap: 20px;
+                align-items: center
+            }
+
+            .hero img {
+                width: 100%;
+                border: radius 8px;
+            }
+
+            .card {
+                background: #fff;
+                border;
+                1px solid #ddd;
+                border-radius: 8px;
+                padding: 16px;
+                box-shadow: 0 2px rgba(, 0, 0, 0, .08);
+                transition: transform, 3s, box=shadow.3s
+            }
+
+            .card:hover {
+                transform: translateY(-4px);
+                box-shadow: 0 6px 14px rgba(0, 0, 0, .15)
+            }
+
+            .grid {
+                display: grid;
+                grid-templete-columns: repeat(auto-fill, minmax(240px, 1fr));
+                gap: 16px
+            }
+
+            .card img {
+                width: 100%;
+                height: 170px;
+                object-fit: cover;
+                border-radius: 6px
+            }
+
+            .price {
+                color: var(--green);
+                font-weight: bold;
+                font-size: 1.2rem
+            }
+
+            .btn {
+                display: inline-block;
+                background: var(--green);
+                color: fff;
+                border: 0;
+                padding: 10px 18px;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 1rem;
+                text-decoration: none;
+                transition: background .3s
+            }
+
+            /* tabs */
+            .tab-buttons {
+                display: flex;
+                gap: 4px;
+                flex-wrap: wrap
+            }
+
+            .tab-buttons button {
+                background: #ddd;
+                border: 0;
+                padding: 10px 18px;
+                cursor: pointer;
+                font-size: 1rem
+            }
+
+            .tab-buttons button.active {
+                baclground: var(--green);
+                color: var(--accent)
+            }
+
+            .tab-panel {
+                display: none;
+                background: #fff;
+                border: 1px solid #ddd;
+                padding: 16px;
+                animation: fade .05s
+            }
+
+            .tab-panel.active {
+                display: block
+            }
+
+            /*accordion */
+            .accordion-btn {
+                width;
+                100%;
+                text-align;
+                left;
+                background: var(--green);
+                color: var(--accent);
+                border: 0;
+                padding: 12px 16px;
+                margin-top;
+                6px;
+                font-size: 1.05rem;
+                cursor: pointer;
+                display: flex;
+                justify-content: space-between
+            }
+
+            .accordion-btn::after {
+                content: "+";
+                font-weight: bold
+            }
+
+            .accordion-btn.open::after {
+                content: "\2212"
+            }
+
+            .accordion-panel {
+                max-height: 0;
+                overflow: hidden;
+                trasition: max-height .4s ease;
+                background: #fff;
+                border: 0 solid#ddd;
+                padding: 0 16px
+            }
+
+            ,
+            .accordion-panel.open {
+                border-width: 1px;
+                padding: 12px 16px
+            }
+
+            /* gallery + lightbox */
+            .gallery {
+                display: grid;
+                grid-templete-columns: repe(auto-fill, minmax(180px, 1fr));
+                gap: 10px
+            }
+
+            .gallery img {
+                width: 100%;
+                height: 160px;
+                object-fit: cover;
+                border-radius: 6px;
+                cursor: pointer;
+                transition: transform .3s
+            }
+
+            .gallery img:hover {
+                transform: scale(1.05)
+            }
+
+            overlay {
+                position: fixed;
+                insert: 0;
+                background: rgba(0, 0, 0, .85);
+                display: none;
+                align-items: center;
+                justify-content: center;
+                z-index: 100;
+                padding: 20px
+            }
+
+            overlay.show {
+                display: flex;
+                animation: fade .3s
+            }
+
+            .overlay .close {
+                position: absolute;
+                bottom: 20px;
+                color: :#fff;
+                font-size2.2rem;
+                cursor: pointer;
+                background: none;
+                border: 0
+            }
+
+            .overlay .cap {
+                position: absolute;
+                bottom: 20px;
+                color#fff;
+                text-align: center;
+                width: 100%
+            }
+
+            /* modal */
+            ,
+            modal-box {
+                background: #fff;
+                border-radius: 8px;
+                max-width: 480px;
+                width: 100%;
+                padding: 20px;
+                position: relative
+            }
+
+            .modal-box.close {
+                color: #333;
+                top: 4px;
+                right: 12px
+            }
+
+            /* form */
+            form {
+                background: #fff;
+                border: 1px solid #ddd;
+                border-radius: 8px;
+                max-width: 620px
+            }
+
+            label {
+                display: block;
+                margin-top: 12px;
+                font-weight: bold
+            }
+
+            input.select,
+            textarea {
+                width: 100%;
+                padding: 10px;
+                margin-top: 4px;
+                border: 1px solid #999;
+                border-radius: 4px;
+                font-size: 1rem;
+                font-family: inherit
+            }
+
+            input.invalid,
+            select.invalid,
+            textarea.invalid {
+                border-color: #c0392b;
+                background: #999;
+                border: radius 4px;
+                font-size: 1rem;
+                font-family: inherit
+            }
+
+            .error {
+                color: #c0392b;
+                font-size: 9rem;
+                min-height: 1.1em
+            }
+
+            .notice {
+                padding: 12px;
+                border-radius: 5px;
+                margin-top: 14px;
+                display: none
+            }
+
+            .notice.ok {
+                display: block;
+                background: #e3f4e1;
+                border: 1px solid var(--green-light)
+            }
+
+            .notice.bad {
+                display: block;
+                background: #fdecea;
+                border: 1px solid#c0392b
+            }
+
+            .toolbar {
+                display: flex;
+                gap: 10px;
+                flex-wrap: wrap;
+                margin-bottom: 14px
+            }
+
+            .toolbar input,
+            .toolbar select {
+                width: auto;
+                flex: 1;
+                min-width: 150px
+            }
+
+            #map {
+                height: 380px;
+                border-radius: 8px;
+                margin-top: 14px
+            }
+
+            .disclaimer {
+                font-size: .85rem;
+                color: #555;
+                border-top: 1px solid #ccc;
+                margin-top: 24px;
+                padding-top: 10px
+            }
+
+            footer {
+                background: var(--green);
+                color:var(--accent)
+
+                /* animations */
+                @keyframes fade {
+                    from {
+                        opacity: 0
+                    }
+
+                    to {
+                        opacity: 1
+                    }
+                }
+
+                .reveal {
+                    opacity: 0;
+                    transform: translateY(24px);
+                    transition: opacity .7s, transform .7s
+                }
+
+                reveal.visible {
+                    opacity: 1;
+                    transform: none
+                }
+
+                @media(max-width:700) {
+                    .hero {
+                        grid-template-columns: 1fr
+                    }
+
+                    nav a {
+                        padding: 10px 12px;
+                        font-size: 1rem
+                    }
+                }

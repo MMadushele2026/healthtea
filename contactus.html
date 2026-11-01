@@ -59,55 +59,47 @@
      <p>We' d love to hear from you! Please fill out the form below with your enquiry.
 
         <!-- Form Functionally & Validation (section 4 Requirements0) -->
-         <form id="contactForm" action=" mailto:info@Flatstomachtea.co.za" method="post" class="contact-form" novalidate>
+         <form id="contactForm" action=" mailto:info@Flatstomachtea.co.za" method="post" class="contact-form" novalidate
 
-            
-            <div class="form-group">
-                <label for="fullName"> Full Name *</label>
-                <input type="text" id="fullName" name="fullName" required placeholder="e.g. Jane Doe">
-                <span class="error"-message" id="nameError"></span>
-                </div>
+ // 1. array of product (Dynamic data)
+ const products =[
+ {name: "7 days magic tummy",price: "role=""",catagory: "Tea"},
+ {name: "slim tummy pack", price:"R450", catagory: "Tea"}
+ {name: "trimmax flat tummy", price:"R750,category: " Tea"
+ ];
 
+ //2. Render products dynamically
+ function displayProducts (items) {
+    const container = document=document.getElementBya(product-list);
+    container.innerHTML = ""; // clear exiting content
 
-                <div class="form-group">
-                    <label fort="email">Email Address *</label>
-                    <input type="email" id="email" name="email" required placeholder="e.g.jane2example.com">
-                    <span class="error-message"id="emailError"></span>
-                </div>
+    items.forEach(product => {
+        const card = document.createElementById("product-list");
+        container.innerHtml =document,getElementById(product-list");
+        container.innerHTML =""; // clear existing content,
 
-                <div class="form-group">
-                    <label for="phone">Phone Number *</label>
-                    <input type="tel" id="phone" name"phone" required pattern="[0-9]{10}" placeholder="e.g. 0821234567">
-                    <span class="error-message" id="phoneError"></span>
-                </div>
+    }items.forEach(product => {
+        const card = document.createdElement("div");
+        card.className ="product- card";
+        card.innerHTML = '
+        <h3>${product.name}</h3>
+        <p>Price: ${product.price}</p>
+        ';
+    });
+}
 
+// 3.Searchproducts() and filter functionality
+function searchProducts() {
+    const query = document.getElementById("searchInput").value.toLowerCase();
+    const filtered = products.filter(p => p.name.toLowerCase().includes(query));
+    displayProducts(fltered);
+}
 
-  <!-- Specific Type of Message Selection-->
- <div class="form-group">
- <label for="messageType">Type of  message *</label>
- <select id="messageType" name="messageType" required>
- < option value="">-- please Select--</option>
- <option value="general">General Enquiry</option>
- <option value="order">Order Tracking & Status</option>
- <option value="feedback">Product Feedback</option>
- </select>
- </div>
-
- <div class="form-group">
- <label for="message"> Full Message *</label>
- <textarea id="message" name="message" rows="5" required minlength="10" placeholder="Type your message here..."></textarea>
- <span class="error-message" id="msgError"></span>
- </div>
-
- <!--Speciific Type of message Selection --
-  div class="form-group">
-  <label for="messageType">Type of message *</label>
- <select id="messageType">Type of messageType" <required>
- <option value="">-- Please Select --</option>
- <option value="general">General Enquiry</option>
- <option value="order"Order Tracking & Status</option>
- <option value=" feedback" product Feedback</option>
-</select>
+// Initial load
+document.addEventListener(DOMContentLoaded", () => {
+    displayproducts(filtered);    
+    });
+ 
 
  
  
