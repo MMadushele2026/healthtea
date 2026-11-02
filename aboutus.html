@@ -7,91 +7,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name=" description"
         content="Discover Flat Stoamch Tea (FST) - natural herbal teas designed to support your wellness, detox, and fitness goals with 4-week challenge programs.">
+    <title> About Us | Flat Stomach Tea</title>
     <link rel="stylesheet" href="mystyle.css">
-    <!-- SEO: Title Tag & Meta Description -->
-    <title>Home | flatStomachtea</title>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script
-      
-        
-    </head>
-    <body>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <style>
+        #map {
+            height: 400px;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
 
 
- <a class="nav" href="index.html">Home</a>
-        <a class="nav" href="aboutus.html">About Us</a>
-        <a class="nav" href="services.html">Services</a>
-        <a  class="nav" href="enquiry.html"">Enquiry</a>
-        <a class="nav" href="contactus.html">Contant Us</a>
-    
-        <br/>
-        <br>
- <img src="images/result fst.jpg"width="300"/>
- <h1 style="color: aqua;background-color: darkgreen;">Our History</h1>
- <p>FST (Flat Stomach Tea) began as a small,home-grown retail business selling custom tea and capsule combos directly to our local community.what started through word-of-mouth recommendations among friends and family quickly expanded into an online store dedicated to making quality wellness accessible to everyone.</p>
- <h2 style="color: aqua;background-color: darkgreen;"> Mission Statement</h2>
- <p>To provide affordable, high-quality,and easy-to-use wellness tea and capsule combos that help everyday South Africans support their digestion, reduce bloating,and feel confident every day</p>
- <img src="images/Rise_Thrive_4_weeks_challenge.jpg" width="300</p>
+    <a class="nav" href="index.html">Home</a>
+    <a class="nav" href="aboutus.html">About Us</a>
+    <a class="nav" href="services.html">Services</a>
+    <a class="nav" href="enquiry.html"">Enquiry</a>
+        <a class=" nav" href="contactus.html">Contant Us</a>
+
+    <br />
+    <br>
+    <img src="images/result fst.jpg" width="300" />
+    <h1 style="color: aqua;background-color: darkgreen;">Our History</h1>
+    <p>FST (Flat Stomach Tea) began as a small,home-grown retail business selling custom tea and capsule combos directly
+        to our local community.what started through word-of-mouth recommendations among friends and family quickly
+        expanded into an online store dedicated to making quality wellness accessible to everyone.</p>
+    <h2 style="color: aqua;background-color: darkgreen;"> Mission Statement</h2>
+    <p>To provide affordable, high-quality,and easy-to-use wellness tea and capsule combos that help everyday South
+        Africans support their digestion, reduce bloating,and feel confident every day</p>
+    <img src="images/Rise_Thrive_4_weeks_challenge.jpg" width="300</p>
 </p>
 
-<img src="images/result fst.jpg"/>
-<h2 style="color: aqua;background-color: darkgreen;"> Vision Statement</h2>
-<p>To become a trusted, recognisable wellness retail brand celebrated for genuine product,transparent ingredient information, amnd outstanding customer care.</p>
+<img src=" images/result fst.jpg" />
+    <h2 style="color: aqua;background-color: darkgreen;"> Vision Statement</h2>
+    <p>To become a trusted, recognisable wellness retail brand celebrated for genuine product,transparent ingredient
+        information, amnd outstanding customer care.</p>
 
-</h3>
+    <div id="map"></div>
 
-<br><br>
+    <br><br>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+        var map = L.map('map').setView([-25.9967, 28.2272], 13);
+        L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
+            maxZoom: 18,
+            subdomains: 'abcd',
+            attribution: 'Tiles & copy; Esri'
+        }).addTo(map);
 
-<!-- search Input for dynamic filtering-->
-
-<button onclick="popMessage()">pop a message</button>
-
-<p > id="msg">where is the new message?</p>
-
-<h2> Where to Buy Our Flat Stomach Tea</h2>
-
-<h2> search products</h2>
-<input type="text"text" Id="searchInput" onkeyup="searchProducts()"placeholder="Search teas...">
-</section>
-
-<!-- Container for Dynamic javaScript Content-->
-<section id="procuct-list"></section>
-
-
-   <div id = "map"></div>
-   <script>
-    var map = L.map('map').setView([0, 0] 1);
-    L.tilelayer('https://api.maptiler.com/tiles/v3-openmaptiles/{z}/{x}/{y}.pbf?key=89iL5zDUnutwlnHPLItm', {
-
-        attribution: '&copy; <' < a href="https://www.maptiler.com/copyright/" target="_blank" >& copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>,
-  
- 
-
- 
- 
- 
-
-        
-
-        
-        
-
-
-
-    </body >
-        
-
-</html >
-
-
-
-
-
-
-        <script src="javascript/script.js"></script>
-
-
+        L.marker([-25.9967, 28.2272]).addTo(map)
+            .bindPopup(' Flat Stomach Tea, Tembisa')
+            .openPopup();
+    </script>
     </main>
-    </body </html>
+</body>
+
+</html>
