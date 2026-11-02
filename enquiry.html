@@ -1,112 +1,115 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name=" description" content="Discover Flat Stoamch Tea (FST) - natural herbal teas designed to support your wellness, detox, and fitness goals with 4-week challenge programs.">
-        <link rel="stylesheet" href="CSS/mystyle.css">
-        <title>Home | flatStomachtea</title>
-        <!-- Enquiry page update-->
 
-        <style>  
-    
-      .text {
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            }
-        </style>        
-    
-         <script src="javascript/script.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name=" description"
+        content="Discover Flat Stoamch Tea (FST) - natural herbal teas designed to support your wellness, detox, and fitness goals with 4-week challenge programs.">
+    <link rel="stylesheet" href="CSS/mystyle.css">
+    <title>Home | flatStomachtea</title>
+    <!-- Enquiry page update-->
+
+    <style>
+        .text {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
+
+    <script src="javascript/script.js"></script>
 
 
 
-    </head>      
-        <a  class="nav" href="index.html">Home</a>
-        <a  class="nav" href="aboutus.html">About Us</a>
-        <a class="nav"  href="services.html">Services</a>
-        <a  class="nav" href="enquiry.html">Enquiry</a>
-        <a  class="nav" href="contactus.html">Contant Us</a>
+</head>
+<a class="nav" href="index.html">Home</a>
+<a class="nav" href="aboutus.html">About Us</a>
+<a class="nav" href="services.html">Services</a>
+<a class="nav" href="enquiry.html">Enquiry</a>
+<a class="nav" href="contactus.html">Contant Us</a>
 
-        <h1 style="color: aqua;background-color: darkgreen;"> product& Customer Order Enquiries</h1>
-        <div style="display: flex; gap: 10px; margin: 20px 0;">
-            <img src="images/real effect super advanced.jpg" width="300"/>
-            <img src="images/trimmax flat tummy.jpg" width="300"/>
-            <img src="images/teabag.jpg" width="300"/>
-        </div>
-        <p> have questions about our combos, ingredient specifications,or bulk orders? fill out the enquiry form below and our team will guide you to the right combo for your wellness goals!</p>
+<h1 style="color: aqua;background-color: darkgreen;"> product& Customer Order Enquiries</h1>
+<div style="display: flex; gap: 10px; margin: 20px 0;">
+    <img src="images/real effect super advanced.jpg" width="300" />
+    <img src="images/trimmax flat tummy.jpg" width="300" />
+    <img src="images/teabag.jpg" width="300" />
+</div>
+<p> have questions about our combos, ingredient specifications,or bulk orders? fill out the enquiry form below and our
+    team will guide you to the right combo for your wellness goals!</p>
 
-        <h2 style="color: aqua;background-color: darkgreen;">[ENQIRY FORM]</h2>
-        <p>........................................................................</p>
-        <p>Full Name:      [.......................................................]</p>
-        <p>Email address : [.......................................................]</p>
-        <p> Phone/ WhatApp:[.......................................................]</p>
-        <p>Enqiry Type :    (o) product Question</p>
-        <p>                 (o) Order& shipping</p>
-        <p>                 (o) Bulk/Whokesale</p>
-        <br/>
-        <p>Select product/Combo: [select combo option.......v]</p>
-        <p> Your Message/ Enquiry:</p>
-        <p>[                                               ]</p>
-        <p>[ Submit Enquiry</p>
-       
-       <main class="container">
+<h2 style="color: aqua;background-color: darkgreen;">[ENQIRY FORM]</h2>
+<p>........................................................................</p>
+<p>Full Name: [.......................................................]</p>
+<p>Email address : [.......................................................]</p>
+<p> Phone/ WhatApp:[.......................................................]</p>
+<p>Enqiry Type : (o) product Question</p>
+<p> (o) Order& shipping</p>
+<p> (o) Bulk/Whokesale</p>
+<br />
+<p>Select product/Combo: [select combo option.......v]</p>
+<p> Your Message/ Enquiry:</p>
+<p>[ ]</p>
+<p>[ Submit Enquiry</p>
+
+<main class="container">
     <!-- header Tag Hierarchy (H!) -->
-     <h1> Contact Flat Stomach Tea</h1>
-     <p>We' d love to hear from you! Please fill out the form below with your enquiry.
+    <h1> Contact Flat Stomach Tea</h1>
+    <p>We' d love to hear from you! Please fill out the form below with your enquiry.
 
         <!-- Form Functionally & Validation (section 4 Requirements0) -->
-         <form id="contactForm" action=" mailto:info@Flatstomachtea.co.za" method="post" class="contact-form" novalidate>
+    <form id="contactForm" action=" mailto:info@Flatstomachtea.co.za" method="post" class="contact-form" novalidate>
 
+        <div class="form-group">
+            <label for="fullName"> Full Name *</label>
+            <input type="text" id="fullName" name="fullName" required placeholder="e.g. Jane Doe">
+            <span class="error" -message" id="nameError"></span>
+        </div>
+
+        <div class="form-group">
+            <label fort="email">Email Address *</label>
+            <input type="email" id="email" name="email" required placeholder="e.g.jane2example.com">
+            <span class="error-message" id="emailError"></span>
+        </div>
+        <br><br>
+
+        <div class="form-group">
+            <label for="phone">Phone Number *</label>
+            <input type="tel" id="phone" name"phone" required pattern="[0-9]{10}" placeholder="e.g. 0821234567">
+            <span class="error-message" id="phoneError"></span>
+        </div>
+        < <!-- Specific Type of Message Selection-->
             <div class="form-group">
-                <label for="fullName"> Full Name *</label>
-                <input type="text" id="fullName" name="fullName" required placeholder="e.g. Jane Doe">
-                <span class="error"-message" id="nameError"></span>
+                <div class="form-group">
+                    <label for="messageType">Type of message *</label>
+                    <select id="messageType" name="messageType" required>
+                        < option value="">-- please Select--</option>
+                            <option value="general">General Enquiry</option>
+                            <option value="order">Order Tracking & Status</option>
+                            <option value="feedback">Product Feedback</option>
+                    </select>
                 </div>
 
                 <div class="form-group">
-                    <label fort="email">Email Address *</label>
-                    <input type="email" id="email" name="email" required placeholder="e.g.jane2example.com">
-                    <span class="error-message"id="emailError"></span>
+                    <label for="message"> Full Message *</label>
+                    <textarea id="message" name="message" rows="5" required minlength="10"
+                        placeholder="Type your message here..."></textarea>
+                    <span class="error-message" id="msgError"></span>
                 </div>
 
-                <div class="form-group">
-                    <label for="phone">Phone Number *</label>
-                    <input type="tel" id="phone" name"phone" required pattern="[0-9]{10}" placeholder="e.g. 0821234567">
-                    <span class="error-message" id="phoneError"></span>
-                </div>
 
                 <!-- Specific Type of Message Selection-->
-                 <div class="form-group">
+                <div class="form-group">
                     <div class="form-group">
-                        <label for="messageType">Type of  message *</label>
+                        <label for="messageType">Type of message *</label>
                         <select id="messageType" name="messageType" required>
-                        < option value="">-- please Select--</option>
-                        <option value="general">General Enquiry</option>
-                        <option value="order">Order Tracking & Status</option>
-                        <option value="feedback">Product Feedback</option>
+                            < option value="">-- please Select--</option>
+                                <option value="general">General Enquiry</option>
+                                <option value="order">Order Tracking & Status</option>
+                                <option value="feedback">Product Feedback</option>
                         </select>
-                        </div>
-
-                 <div class="form-group">
-                    <label for="message"> Full Message *</label>
-                    <textarea id="message" name="message" rows="5" required minlength="10" placeholder="Type your message here..."></textarea>
-                    <span class="error-message" id="msgError"></span>
-                    </div> 
-                    
-                    
-                    <!-- Specific Type of Message Selection-->
-                 <div class="form-group">
-                    <div class="form-group">
-                        <label for="messageType">Type of  message *</label>
-                        <select id="messageType" name="messageType" required>
-                        < option value="">-- please Select--</option>
-                        <option value="general">General Enquiry</option>
-                        <option value="order">Order Tracking & Status</option>
-                        <option value="feedback">Product Feedback</option>
-                        </select>
-                        </div>
+                    </div>
 
 
-                 
-  </body>
-  
+
+                    </body>
+
 </html>
